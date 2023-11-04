@@ -1,0 +1,22 @@
+﻿@model FolderSystem.Models.FolderViewModel
+
+<h1>"Folder" - @Model.CurrentFolder.Name</h1>
+
+@if (Model.Subfolders.Any())
+{
+    <ul>
+        @foreach (var subfolder in Model.Subfolders)
+        {
+            <li>
+                <a href="@Url.Action("Index", new { folderPath = "/" + await Model.FolderRepository.GetFolderPathAsync(subfolder) })">
+                @subfolder.Name
+            </a></li>
+        }
+    </ul>
+}
+else
+{
+    <p>No subfolders found.</p>
+}
+
+

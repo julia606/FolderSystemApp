@@ -4,14 +4,73 @@
     "C:\\Users\\Yuliia\\source\\repos\\FolderSystemApp\\FolderSystem\\FolderSystem\\FolderSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Yuliia\\source\\repos\\FolderSystemApp\\FolderSystem\\FolderSystem\\FolderSystem.csproj": {
+    "C:\\Users\\Yuliia\\source\\repos\\FolderSystemApp\\FolderSystem\\BusinessLogic\\BusinessLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yuliia\\source\\repos\\FolderSystemApp\\FolderSystem\\FolderSystem\\FolderSystem.csproj",
-        "projectName": "FolderSystem",
-        "projectPath": "C:\\Users\\Yuliia\\source\\repos\\FolderSystemApp\\FolderSystem\\FolderSystem\\FolderSystem.csproj",
+        "projectUniqueName": "C:\\Users\\Yuliia\\source\\repos\\FolderSystemApp\\FolderSystem\\BusinessLogic\\BusinessLogic.csproj",
+        "projectName": "BusinessLogic",
+        "projectPath": "C:\\Users\\Yuliia\\source\\repos\\FolderSystemApp\\FolderSystem\\BusinessLogic\\BusinessLogic.csproj",
         "packagesPath": "C:\\Users\\Yuliia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yuliia\\source\\repos\\FolderSystemApp\\FolderSystem\\FolderSystem\\obj\\",
+        "outputPath": "C:\\Users\\Yuliia\\source\\repos\\FolderSystemApp\\FolderSystem\\BusinessLogic\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Yuliia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Yuliia\\source\\repos\\FolderSystemApp\\FolderSystem\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\Yuliia\\source\\repos\\FolderSystemApp\\FolderSystem\\DataAccess\\DataAccess.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Yuliia\\source\\repos\\FolderSystemApp\\FolderSystem\\DataAccess\\DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Yuliia\\source\\repos\\FolderSystemApp\\FolderSystem\\DataAccess\\DataAccess.csproj",
+        "projectName": "DataAccess",
+        "projectPath": "C:\\Users\\Yuliia\\source\\repos\\FolderSystemApp\\FolderSystem\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\Yuliia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Yuliia\\source\\repos\\FolderSystemApp\\FolderSystem\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Yuliia\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +98,90 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.13, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Yuliia\\source\\repos\\FolderSystemApp\\FolderSystem\\FolderSystem\\FolderSystem.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Yuliia\\source\\repos\\FolderSystemApp\\FolderSystem\\FolderSystem\\FolderSystem.csproj",
+        "projectName": "FolderSystem",
+        "projectPath": "C:\\Users\\Yuliia\\source\\repos\\FolderSystemApp\\FolderSystem\\FolderSystem\\FolderSystem.csproj",
+        "packagesPath": "C:\\Users\\Yuliia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Yuliia\\source\\repos\\FolderSystemApp\\FolderSystem\\FolderSystem\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Yuliia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Yuliia\\source\\repos\\FolderSystemApp\\FolderSystem\\BusinessLogic\\BusinessLogic.csproj": {
+                "projectPath": "C:\\Users\\Yuliia\\source\\repos\\FolderSystemApp\\FolderSystem\\BusinessLogic\\BusinessLogic.csproj"
+              },
+              "C:\\Users\\Yuliia\\source\\repos\\FolderSystemApp\\FolderSystem\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\Yuliia\\source\\repos\\FolderSystemApp\\FolderSystem\\DataAccess\\DataAccess.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
