@@ -59,27 +59,6 @@ namespace FolderSystem.Controllers
             
         }
 
-        [HttpPost]
-        public async Task<IActionResult> ImportFromOS(string path)
-        {
-            await ImportCatalogsFromOSAsync(path, null); 
-
-            return RedirectToAction("Index");
-        }
-
-        private async Task ImportCatalogsFromOSAsync(string path, int? parentId)
-        {
-            string[] directories = await Task.Run(() => Directory.GetDirectories(path));
-
-            foreach (string directory in directories)
-            {
-                var catalog = new Folder { Name = Path.GetFileName(directory), ParentFolderId = parentId };
-                _context.Folders.Add(catalog);
-                await _context.SaveChangesAsync();
-
-                await ImportCatalogsFromOSAsync(directory, catalog.Id); 
-            }
-        }
 
     }
 }

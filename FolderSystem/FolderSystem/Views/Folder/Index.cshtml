@@ -19,13 +19,4 @@ else
     <p>No subfolders found.</p>
 }
 
-<h2>Import folder system</h2>
-@using (Html.BeginForm("ImportFromOS", "Folder", FormMethod.Post, new { enctype = "multipart/form-data" }))
-{
-    <div class="form-group">
-        <label for="importDirectory">Виберіть каталог для імпорту:</label>
-        <input type="file" id="importDirectory" name="importDirectory" class="form-control" directory webkitdirectory />
-    </div>
-    <button type="submit" class="btn btn-primary">Імпортувати</button>
-}
 

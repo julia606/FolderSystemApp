@@ -1,8 +1,6 @@
 using BusinessLogic.Repositories;
 using DataAccess.EF;
-using Microsoft.AspNetCore.Hosting.Server;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 
 
 var builder = WebApplication.CreateBuilder(args);
